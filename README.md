@@ -1,5 +1,6 @@
 # portfolio
-Project of a personal portfolio
+
+Project of a personal portfolio.
 
 Made with:
 - Gulp
