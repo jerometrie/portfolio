@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/jerometrie/portfolio#readme",
   "devDependencies": {
+    "babel-core": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
-    "gulp": "^3.9.1"
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
