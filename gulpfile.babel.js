@@ -34,16 +34,30 @@ gulp.task("sass", function() {
 		}));
 });
 
-// Watch task
-// Before it's started, we run sync, sass, ans bundlejs
-gulp.task("watch", ["sync", "sass", "bundlejs"], function() {
+// Copy all HTML files from src/ to .tmp/
+gulp.task("copyhtml", function() {
+	gulp.src("src/**/*.html")
+		.pipe(gulp.dest(".tmp"))
+		.pipe(sync.reload({
+			stream: true
+		}));
+});
+
+
+
+
+// Watch task:
+// Will only begin after sync, sass, copyhtml, and bundlejs has finished
+gulp.task("watch", ["sync", "sass", "copyhtml", "bundlejs"], function() {
 	// Watch all scss files in src/scss, then execute "sass"
 	gulp.watch("src/scss/**/*.scss", ["sass"]);
 	// Watch all js files in src/js, then execute "bundlejs"
 	gulp.watch("src/js/**/*.js", ["bundlejs"]);
+	// Watch all HTML files in src/, then execute "copyhtml"
+	gulp.watch("src/**/*.html", ["copyhtml"]);
 });
 
-// Initialization of browser sync by showing what is in .tmp
+// Start a server, initialization of browser sync by showing what is in .tmp
 gulp.task("sync", function() {
 	sync.init({
 		server: {
