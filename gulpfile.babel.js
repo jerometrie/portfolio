@@ -43,9 +43,6 @@ gulp.task("copyhtml", function() {
 		}));
 });
 
-
-
-
 // Watch task:
 // Will only begin after sync, sass, copyhtml, and bundlejs has finished
 gulp.task("watch", ["sync", "sass", "copyhtml", "bundlejs"], function() {
