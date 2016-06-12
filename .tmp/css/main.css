@@ -1,3 +1,19 @@
+@media only screen and (max-width: 600px) {
+  p, a {
+    font-size: 18px; }
+  header h1 {
+    font-size: 27px; }
+  .row h1 {
+    font-size: 36px; } }
+
+@media only screen and (min-width: 600px) {
+  p, a {
+    font-size: 23.4px; }
+  header h1 {
+    font-size: 35.1px; }
+  .row h1 {
+    font-size: 50.4px; } }
+
 @-ms-viewport {
   width: device-width;
   zoom: 1; }
@@ -14,14 +30,21 @@
 *	Base
 *****************************************/
 html {
-  font-size: 16px; }
+  font-size: 18px; }
 
 body {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 62.5%; }
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.5; }
+
+ul {
+  margin: 0; }
 
 p, a {
-  font-size: 2em; }
+  line-height: 1.5;
+  margin: 0; }
 
 a {
   text-decoration: none; }
@@ -29,36 +52,40 @@ a {
 li {
   list-style-type: none; }
 
+figure {
+  margin: 0; }
+
 /*****************************************
 *	Header
 *****************************************/
-header h1 {
-  font-size: 3em; }
-
 /*****************************************
 *	Hero
 *****************************************/
 #home {
   background-color: #FFFFFF;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
   color: #2b333f; }
-  #home h1 {
-    font-size: 4.5em; }
 
 /*****************************************
 *	Sections
 *****************************************/
 .row:nth-child(even) {
   background-color: #d33939;
-  color: #FFFFFF; }
-  .row:nth-child(even) h1 {
-    font-size: 4.5em; }
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0; }
 
 .row:nth-child(odd) {
   background-color: #2b333f;
-  color: #FFFFFF; }
-  .row:nth-child(odd) h1 {
-    font-size: 4.5em; }
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0; }
   .row:nth-child(odd) h1 {
     color: #d33939;
     text-align: right; }
+
+.container {
+  margin: 0 auto;
+  max-width: 75%; }

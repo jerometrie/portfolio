@@ -3,10 +3,8 @@
 	
 	background-color: $bkgc;
 	color: $light-text;
-
-	h1 {
-		font-size: $row-h1-size;
-	}
+	margin: 0;
+	padding: 0;
 	
 	@if $bkgc == $normal-bkg {
 		h1 {
@@ -18,5 +16,7 @@
 	@if $home == true {
 		color: $dark-text;
 	}
-
 }
+
+
+

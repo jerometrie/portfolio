@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "font-size";
 @import "global";
 
 /*****************************************
@@ -7,16 +8,27 @@
 *****************************************/
 
 html {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 body {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	font-size: 62.5%;		// Makes 1em = 10px in a normal context
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 1.5;
+}
+
+ul {
+	margin: 0;
 }
 
 p, a {
-	font-size: $normal-size
+	line-height: 1.5;
+	margin: 0;
 }
 
 a {
@@ -27,15 +39,17 @@ li {
 	list-style-type: none;
 }
 
+figure {
+	margin: 0;
+}
+
 /*****************************************
 *	Header
 *****************************************/
 
 header {
 
-	h1 {
-		font-size: $header-h1-size;
-	}
+
 }
 
 /*****************************************
@@ -57,6 +71,11 @@ header {
 
 .row:nth-child(odd) {
 	@include rowLayout($normal-bkg);
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 75%;
 }
 
 

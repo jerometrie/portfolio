@@ -8,11 +8,13 @@ $light-bkg: #FFFFFF;
 $normal-bkg: #2b333f;
 $accent-bkg: #d33939;
 
-//   TEXT SIZES   //
-$normal-size: 2em;
-$header-h1-size: 3em;
-$row-h1-size: 4.5em;
+//   MINIMAL TEXT SIZES (in px)  //
 
-//   BREAKPOINTS    //
+$min-normal-size: 18;
+$min-header-h1-size: $min-normal-size * 1.5;
+$min-row-h1-size: $min-normal-size * 2;
 
-// $small-screen: 720px;
+//   BREAK POINTS   //
+$high-breakpoint: 1025px;
+$low-breakpoint: 600px;
+
