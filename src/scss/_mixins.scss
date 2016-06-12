@@ -1,0 +1,22 @@
+// Mixin for layout of rows
+@mixin rowLayout($bkgc, $home: false) {
+	
+	background-color: $bkgc;
+	color: $light-text;
+
+	h1 {
+		font-size: $row-h1-size;
+	}
+	
+	@if $bkgc == $normal-bkg {
+		h1 {
+			color: $accent-text;
+			text-align: right;
+		}
+	}
+
+	@if $home == true {
+		color: $dark-text;
+	}
+
+}

@@ -13,3 +13,52 @@
 /*****************************************
 *	Base
 *****************************************/
+html {
+  font-size: 16px; }
+
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 62.5%; }
+
+p, a {
+  font-size: 2em; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+/*****************************************
+*	Header
+*****************************************/
+header h1 {
+  font-size: 3em; }
+
+/*****************************************
+*	Hero
+*****************************************/
+#home {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  color: #2b333f; }
+  #home h1 {
+    font-size: 4.5em; }
+
+/*****************************************
+*	Sections
+*****************************************/
+.row:nth-child(even) {
+  background-color: #d33939;
+  color: #FFFFFF; }
+  .row:nth-child(even) h1 {
+    font-size: 4.5em; }
+
+.row:nth-child(odd) {
+  background-color: #2b333f;
+  color: #FFFFFF; }
+  .row:nth-child(odd) h1 {
+    font-size: 4.5em; }
+  .row:nth-child(odd) h1 {
+    color: #d33939;
+    text-align: right; }

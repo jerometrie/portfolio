@@ -1,12 +1,64 @@
+@import "variables";
+@import "mixins";
 @import "global";
 
 /*****************************************
 *	Base
 *****************************************/
 
-body {
-	
+html {
+	font-size: 16px;
 }
+
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 62.5%;		// Makes 1em = 10px in a normal context
+}
+
+p, a {
+	font-size: $normal-size
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/*****************************************
+*	Header
+*****************************************/
+
+header {
+
+	h1 {
+		font-size: $header-h1-size;
+	}
+}
+
+/*****************************************
+*	Hero
+*****************************************/
+
+#home {
+	@include rowLayout($light-bkg, $home: true);
+}
+
+
+/*****************************************
+*	Sections
+*****************************************/
+
+.row:nth-child(even) {
+	@include rowLayout($accent-bkg);
+}
+
+.row:nth-child(odd) {
+	@include rowLayout($normal-bkg);
+}
+
 
 
 
