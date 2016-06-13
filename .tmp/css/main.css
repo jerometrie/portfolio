@@ -1,3 +1,6 @@
+/*****************************************
+*	Font sizes
+*****************************************/
 @media only screen and (max-width: 580px) {
   p, a {
     font-size: 18px; }
@@ -61,13 +64,18 @@ figure {
 *	Header and Navbar
 *****************************************/
 nav {
-  text-align: right; }
+  position: fixed;
+  text-align: right;
+  top: 20px;
+  right: 20px; }
 
 nav ul {
   max-height: 0;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  transition: max-height 0.4s; }
   nav ul li {
+    box-sizing: border-box;
     display: block;
     padding: 10px 15px 10px 15px;
     width: 100%; }
@@ -77,7 +85,8 @@ nav ul {
 
 .handle {
   cursor: pointer;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
 .showing {
   max-height: 20em; }

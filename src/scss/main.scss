@@ -48,15 +48,20 @@ figure {
 *****************************************/
 
 nav {
+	position: fixed;
 	text-align: right;
+	top: 20px;
+	right: 20px;
 }
 
 nav ul {
 	max-height: 0;
 	overflow: hidden;
 	text-align: center;
+	transition: max-height 0.4s;
 
 	li {
+		box-sizing: border-box;
 		display: block;
 		padding: 10px 15px 10px 15px;
 		width: 100%;
@@ -69,9 +74,9 @@ nav ul {
 }
 
 .handle {
-	
 	cursor: pointer;
 	display: inline-block;
+	text-align: center;
 }
 
 .showing {
