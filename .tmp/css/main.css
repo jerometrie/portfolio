@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 580px) {
   p, a {
     font-size: 18px; }
   header h1 {
@@ -6,7 +6,7 @@
   .row h1 {
     font-size: 36px; } }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 580px) {
   p, a {
     font-size: 23.4px; }
   header h1 {
@@ -40,24 +40,48 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
 
 p, a {
   line-height: 1.5;
   margin: 0; }
 
 a {
+  color: inherit;
   text-decoration: none; }
-
-li {
-  list-style-type: none; }
 
 figure {
   margin: 0; }
 
 /*****************************************
-*	Header
+*	Header and Navbar
 *****************************************/
+nav {
+  text-align: right; }
+
+nav ul {
+  max-height: 0;
+  overflow: hidden;
+  text-align: center; }
+  nav ul li {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    width: 100%; }
+    nav ul li:hover {
+      background-color: #2b333f;
+      color: #FFFFFF; }
+
+.handle {
+  cursor: pointer;
+  display: inline-block; }
+
+.showing {
+  max-height: 20em; }
+
 /*****************************************
 *	Hero
 *****************************************/
