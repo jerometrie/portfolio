@@ -3,7 +3,7 @@
 *****************************************/
 
 @media only screen and (max-width: $low-breakpoint) {
-	p, a {
+	p, a, span {
 		font-size: #{$min-normal-size}px;
 	}
 	header h1 {
@@ -15,7 +15,7 @@
 }
 
 @media only screen and (min-width: $low-breakpoint) {
-	p, a {
+	p, a, span {
 		font-size: #{$min-normal-size * 1.3}px;
 	}
 	header h1 {

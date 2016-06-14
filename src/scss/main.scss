@@ -41,6 +41,7 @@ a {
 
 figure {
 	margin: 0;
+	padding-bottom: 20px;
 }
 
 /*****************************************
@@ -74,8 +75,11 @@ nav ul {
 }
 
 .handle {
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
 	cursor: pointer;
 	display: inline-block;
+	padding: 10px 15px 10px 15px;
 	text-align: center;
 }
 
@@ -111,7 +115,23 @@ nav ul {
 
 .container {
 	margin: 0 auto;
-	max-width: 75%;
+	max-width: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+figure {
+
+	width: $portfolio-image-width;
+
+	img {
+		height: auto;
+		width: $portfolio-image-width;
+	}
+}
+
+figcaption {
+	text-align: center;
 }
 
 
