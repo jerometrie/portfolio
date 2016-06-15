@@ -130,10 +130,17 @@ nav ul {
   padding-bottom: 20px; }
 
 figure {
+  display: inline-block;
   width: 400px; }
   figure img {
     height: auto;
-    width: 400px; }
+    width: inherit; }
 
 figcaption {
   text-align: center; }
+
+.avatar {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 200px; }

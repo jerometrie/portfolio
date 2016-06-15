@@ -1,4 +1,5 @@
 @import "variables";
+@import "~susy/sass/susy";
 @import "mixins";
 @import "font-size";
 @import "global";
@@ -122,11 +123,12 @@ nav ul {
 
 figure {
 
+	display: inline-block;
 	width: $portfolio-image-width;
 
 	img {
 		height: auto;
-		width: $portfolio-image-width;
+		width: inherit;
 	}
 }
 
@@ -135,5 +137,11 @@ figcaption {
 }
 
 
+.avatar {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
 
 
