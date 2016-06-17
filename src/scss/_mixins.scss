@@ -5,6 +5,10 @@
 	color: $light-text;
 	margin: 0;
 	padding: 0;
+
+	h1 {
+		padding-bottom: 20px;
+	}
 	
 	@if $bkgc == $normal-bkg {
 		h1 {

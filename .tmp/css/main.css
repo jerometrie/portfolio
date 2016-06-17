@@ -100,6 +100,8 @@ nav ul {
   margin: 0;
   padding: 0;
   color: #2b333f; }
+  #home h1 {
+    padding-bottom: 20px; }
 
 /*****************************************
 *	Sections
@@ -109,12 +111,16 @@ nav ul {
   color: #FFFFFF;
   margin: 0;
   padding: 0; }
+  .row:nth-child(even) h1 {
+    padding-bottom: 20px; }
 
 .row:nth-child(odd) {
   background-color: #2b333f;
   color: #FFFFFF;
   margin: 0;
   padding: 0; }
+  .row:nth-child(odd) h1 {
+    padding-bottom: 20px; }
   .row:nth-child(odd) h1 {
     color: #d33939;
     text-align: right; }
@@ -132,9 +138,9 @@ nav ul {
 
 figure {
   display: inline-block;
-  flex-grow: 1;
+  flex-shrink: 1;
   margin: 0;
-  padding: 0 30px 30px 0;
+  padding-bottom: 30px;
   width: 400px; }
   figure img {
     width: 100%; }
