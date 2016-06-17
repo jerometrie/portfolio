@@ -1,5 +1,4 @@
 @import "variables";
-@import "~susy/sass/susy";
 @import "mixins";
 @import "font-size";
 @import "global";
@@ -40,10 +39,6 @@ a {
 	text-decoration: none;
 }
 
-figure {
-	margin: 0;
-	padding-bottom: 20px;
-}
 
 /*****************************************
 *	Header and Navbar
@@ -121,14 +116,21 @@ nav ul {
 	padding-bottom: 20px;
 }
 
-figure {
+.figureContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+figure {
 	display: inline-block;
+	flex-grow: 1;
+	margin: 0;
+	padding: 0 30px 30px 0;
 	width: $portfolio-image-width;
 
 	img {
-		height: auto;
-		width: inherit;
+		width: 100%;
 	}
 }
 
