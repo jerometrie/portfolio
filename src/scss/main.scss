@@ -111,34 +111,26 @@ nav ul {
 
 .container {
 	margin: 0 auto;
-	max-width: 80%;
+	max-width: 85%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.figureContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
+// Portfolio section
 
 figure {
-	display: inline-block;
-	flex-shrink: 1;
-	margin: 0;
-	padding-bottom: 30px;
-	width: $portfolio-image-width;
 
 	img {
 		width: 100%;
 	}
+
+	figcaption {
+		text-align: center;
+	}
 }
 
-figcaption {
-	text-align: center;
-}
 
-
+// About section
 .avatar {
 	border-radius: 50%;
 	display: block;

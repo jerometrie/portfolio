@@ -98,6 +98,7 @@ nav ul {
   background-color: #FFFFFF;
   color: #FFFFFF;
   margin: 0;
+  min-height: 100vh;
   padding: 0;
   color: #2b333f; }
   #home h1 {
@@ -110,6 +111,7 @@ nav ul {
   background-color: #d33939;
   color: #FFFFFF;
   margin: 0;
+  min-height: 100vh;
   padding: 0; }
   .row:nth-child(even) h1 {
     padding-bottom: 20px; }
@@ -118,6 +120,7 @@ nav ul {
   background-color: #2b333f;
   color: #FFFFFF;
   margin: 0;
+  min-height: 100vh;
   padding: 0; }
   .row:nth-child(odd) h1 {
     padding-bottom: 20px; }
@@ -127,25 +130,14 @@ nav ul {
 
 .container {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 85%;
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.figureContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+figure img {
+  width: 100%; }
 
-figure {
-  display: inline-block;
-  flex-shrink: 1;
-  margin: 0;
-  padding-bottom: 30px;
-  width: 400px; }
-  figure img {
-    width: 100%; }
-
-figcaption {
+figure figcaption {
   text-align: center; }
 
 .avatar {
