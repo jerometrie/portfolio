@@ -67,9 +67,12 @@ nav {
   right: 15px; }
 
 .modal {
+  background-color: red;
   max-height: 0;
   overflow: hidden;
+  position: fixed;
   text-align: center;
+  top: 60px;
   transition: max-height 0.4s; }
   .modal li {
     box-sizing: border-box;
