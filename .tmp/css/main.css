@@ -67,13 +67,14 @@ nav {
   right: 15px; }
 
 .modal {
-  background-color: red;
+  background-color: white;
   max-height: 0;
   overflow: hidden;
   position: fixed;
   text-align: center;
   top: 60px;
-  transition: max-height 0.4s; }
+  transition: max-height 0.4s;
+  width: 100%; }
   .modal li {
     box-sizing: border-box;
     display: block;
@@ -90,9 +91,6 @@ nav {
   display: inline-block;
   padding: 10px 15px 10px 15px;
   text-align: center; }
-
-.modal {
-  width: 100%; }
 
 .showing {
   max-height: 20em; }
