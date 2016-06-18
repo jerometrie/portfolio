@@ -63,20 +63,20 @@ a {
 nav {
   position: fixed;
   text-align: right;
-  top: 20px;
-  right: 20px; }
+  top: 15px;
+  right: 15px; }
 
-nav ul {
+.modal {
   max-height: 0;
   overflow: hidden;
   text-align: center;
   transition: max-height 0.4s; }
-  nav ul li {
+  .modal li {
     box-sizing: border-box;
     display: block;
     padding: 10px 15px 10px 15px;
     width: 100%; }
-    nav ul li:hover {
+    .modal li:hover {
       background-color: #2b333f;
       color: #FFFFFF; }
 
@@ -87,6 +87,9 @@ nav ul {
   display: inline-block;
   padding: 10px 15px 10px 15px;
   text-align: center; }
+
+.modal {
+  width: 100%; }
 
 .showing {
   max-height: 20em; }

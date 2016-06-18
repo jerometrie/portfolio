@@ -47,11 +47,11 @@ a {
 nav {
 	position: fixed;
 	text-align: right;
-	top: 20px;
-	right: 20px;
+	top: 15px;
+	right: 15px;
 }
 
-nav ul {
+.modal {
 	max-height: 0;
 	overflow: hidden;
 	text-align: center;
@@ -77,6 +77,14 @@ nav ul {
 	display: inline-block;
 	padding: 10px 15px 10px 15px;
 	text-align: center;
+}
+
+.modal {
+	width: 100%;
+	// background-color: rgba(255, 255, 255, 0.5);
+	// left: 50%;
+	// position: absolute;
+	// transform: translate(-150%, 0);
 }
 
 .showing {

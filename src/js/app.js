@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 	// Take care of the menu handle
-	$(".handle").on("click", function() {
-		$("nav ul").toggleClass("showing");
+	$(".handle").on("click", function(event) {
+		event.preventDefault();
+		$(".modal").toggleClass("showing");
 	});
 });
