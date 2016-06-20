@@ -8,10 +8,6 @@ $light-bkg: #FFFFFF;
 $normal-bkg: #2b333f;
 $accent-bkg: #d33939;
 
-//   WIDTH of portfolio images  //
-$portfolio-image-width: 400px;
-
-
 
 //   MINIMAL TEXT SIZES (in px)  //
 
@@ -19,7 +15,11 @@ $min-normal-size: 18;
 $min-header-h1-size: $min-normal-size * 1.5;
 $min-row-h1-size: $min-normal-size * 2;
 
+
 //   BREAK POINTS   //
 $high-breakpoint: 1025px;
 $low-breakpoint: 580px;
+
+//    WIDTHS OF ELEMENTS    //
+$sections-width: 90; // in %
 

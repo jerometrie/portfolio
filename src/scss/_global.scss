@@ -11,3 +11,16 @@
      width: device-width;
      zoom: 1;
 }
+
+// Clearfix hack
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}

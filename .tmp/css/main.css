@@ -29,6 +29,18 @@
   width: device-width;
   zoom: 1; }
 
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
 /*****************************************
 *	Base
 *****************************************/
@@ -56,6 +68,10 @@ p, a {
 a {
   color: inherit;
   text-decoration: none; }
+
+figure {
+  margin: 0;
+  padding: 0; }
 
 /*****************************************
 *	Header and Navbar
@@ -134,15 +150,20 @@ nav {
 
 .container {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 90%;
   padding-top: 20px;
   padding-bottom: 20px; }
 
-figure img {
-  width: 100%; }
-
-figure figcaption {
-  text-align: center; }
+figure {
+  margin: 30px; }
+  figure img {
+    width: 100%; }
+  figure figcaption {
+    text-align: center; }
+  @media (min-width: 580px) {
+    figure {
+      float: left;
+      width: 462px; } }
 
 .avatar {
   border-radius: 50%;

@@ -39,6 +39,11 @@ a {
 	text-decoration: none;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
 
 /*****************************************
 *	Header and Navbar
@@ -89,10 +94,6 @@ nav {
 }
 
 
-
-
-
-
 /*****************************************
 *	Hero
 *****************************************/
@@ -106,6 +107,8 @@ nav {
 *	Sections
 *****************************************/
 
+
+// Color for all sections
 .row:nth-child(even) {
 	@include rowLayout($accent-bkg);
 }
@@ -114,25 +117,40 @@ nav {
 	@include rowLayout($normal-bkg);
 }
 
+// Global parameters of all sections
 .container {
 	margin: 0 auto;
-	max-width: 85%;
+	max-width: $sections-width * 1%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 // Portfolio section
 
+
+
 figure {
+
+	margin: 30px;
 
 	img {
 		width: 100%;
 	}
-
 	figcaption {
 		text-align: center;
 	}
+
+	@media (min-width: $low-breakpoint) {
+
+		float: left;
+
+		// figures' width = 90% of the $low-breakpoint's width - twice the margin
+		width: ($low-breakpoint * $sections-width / 100 - 2*30);
+
+	}
 }
+
+
 
 
 // About section
