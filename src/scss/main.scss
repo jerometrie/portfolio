@@ -127,10 +127,8 @@ nav {
 
 // Portfolio section
 
-
-
 figure {
-
+	
 	margin: 30px;
 
 	img {
@@ -154,11 +152,24 @@ figure {
 
 
 // About section
+
+#about p {
+	padding: 20px 0 0 0;
+	@media (min-width: $high-breakpoint) {
+		padding: 0 0 20px 0;
+	}
+}
+
 .avatar {
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
 	width: 200px;
+
+	@media (min-width: $high-breakpoint) {
+		float: left;
+		margin: 0 30px 30px 0;
+	}
 }
 
 

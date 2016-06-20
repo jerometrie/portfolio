@@ -165,8 +165,18 @@ figure {
       float: left;
       width: 462px; } }
 
+#about p {
+  padding: 20px 0 0 0; }
+  @media (min-width: 1025px) {
+    #about p {
+      padding: 0 0 20px 0; } }
+
 .avatar {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   width: 200px; }
+  @media (min-width: 1025px) {
+    .avatar {
+      float: left;
+      margin: 0 30px 30px 0; } }
