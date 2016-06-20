@@ -148,6 +148,17 @@ figure {
 	}
 }
 
+figcaption span {
+	background-color: $light-bkg;
+	border-radius: 5px;
+	color: $accent-text;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 5px;
+}
+
 
 
 
